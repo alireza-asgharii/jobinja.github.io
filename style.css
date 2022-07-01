@@ -11,7 +11,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  height: 85px;
+  height: 75px;
   color: #fff;
   z-index: 99;
   position: sticky;
@@ -30,7 +30,7 @@
 }
 
 .header .logo {
-  width: 80px;
+  width: 75px;
 }
 
 .header .navbar {
@@ -79,7 +79,7 @@
 .hamburgerMenuContainer {
   width: 100%;
   position: fixed;
-  top: 11%;
+  top: 10%;
   right: 0;
   background: #505050f7;
   transform: translateY(-150%);
@@ -143,4 +143,11 @@
     transform: translateY(-150%);
   }
 }
+
+@media screen and (max-width: 660px) {
+  .fa-user, .fa-bell, .fa-magnifying-glass, .hamburgerMenu, .logo {
+    cursor: default;
+  }
+}
+
 
