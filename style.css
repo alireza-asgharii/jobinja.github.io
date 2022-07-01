@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header {
+  background: #444;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  height: 85px;
+  color: #fff;
+  z-index: 99;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.header a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.header li {
+  list-style: none;
+}
+
+.header .logo {
+  width: 90px;
+}
+
+.header .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header .login i {
+  margin: 0 15px 0;
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.352);
+}
+
+.header .login,
+.header .navbar {
+  padding: 10px;
+}
+
+.fa-bars,
+.fa-magnifying-glass {
+  font-size: 1.5rem;
+  margin: 0 15px 0;
+  color: rgba(255, 255, 255, 0.352);
+}
+
+.fa-bars {
+  background: rgba(255, 255, 255, 0.132);
+  padding: 7px 10px;
+  color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.hamburgerMenuContainer {
+  width: 100%;
+  position: fixed;
+  top: 12%;
+  right: 0;
+  background: #505050f7;
+  transform: translateY(-150%);
+  z-index: 10;
+  transition: all ease .4s;
+}
+
+.hamburgerMenuContainer li a {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.hamburgerMenuContainer li a:hover {
+  background: #505050;
+}
+
+.hamburgerMenuContainer li:not(:last-child) {
+  border-bottom: 1px solid #666;
+}
+
+
+.hamburgerMenuContainer li .active {
+  background: #505050;
+}
+
+.hamburgerMenuContainer img {
+  width: 20px;
+}
+
+.hamburgerMenuContainer p {
+  margin-right: 10px;
+  font-size: 1.1rem;
+}
+
+.hamburgerMenuOpen {
+  animation: hamburgerMenuOpen .3s ease forwards;
+}
+
+@keyframes hamburgerMenuOpen {
+  0% {
+    transform: translateY(-150%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+.hamburgerMenuClose {
+  animation: hamburgerMenuClose .3s ease forwards;
+}
+
+@keyframes hamburgerMenuClose {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-150%);
+  }
+}
+
