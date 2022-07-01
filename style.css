@@ -68,7 +68,7 @@
 .hamburgerMenuContainer {
   width: 100%;
   position: fixed;
-  top: 9%;
+  top: 12%;
   right: 0;
   background: #505050f7;
   transform: translateY(-150%);
