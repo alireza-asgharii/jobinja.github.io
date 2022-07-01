@@ -43,7 +43,13 @@
   margin: 0 15px 0;
   font-size: 1.3rem;
   color: rgba(255, 255, 255, 0.352);
+  transition: all ease .3s;
 }
+
+.header .login i:hover {
+  color: #fff;
+}
+
 
 .header .login,
 .header .navbar {
@@ -55,6 +61,11 @@
   font-size: 1.3rem;
   margin: 0 15px 0;
   color: rgba(255, 255, 255, 0.352);
+  transition: all ease .3s;
+}
+
+.fa-magnifying-glass:hover {
+  color: #fff;
 }
 
 .fa-bars {
@@ -68,7 +79,7 @@
 .hamburgerMenuContainer {
   width: 100%;
   position: fixed;
-  top: 9%;
+  top: 11%;
   right: 0;
   background: #505050f7;
   transform: translateY(-150%);
@@ -105,6 +116,7 @@
   margin-right: 10px;
   font-size: 1.1rem;
 }
+
 
 .hamburgerMenuOpen {
   animation: hamburgerMenuOpen .3s ease forwards;
