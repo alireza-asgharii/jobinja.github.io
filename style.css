@@ -30,7 +30,7 @@
 }
 
 .header .logo {
-  width: 90px;
+  width: 80px;
 }
 
 .header .navbar {
@@ -41,7 +41,7 @@
 
 .header .login i {
   margin: 0 15px 0;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color: rgba(255, 255, 255, 0.352);
 }
 
@@ -52,7 +52,7 @@
 
 .fa-bars,
 .fa-magnifying-glass {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   margin: 0 15px 0;
   color: rgba(255, 255, 255, 0.352);
 }
