@@ -41,7 +41,7 @@
 
 .header .login i {
   margin: 0 15px 0;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   color: rgba(255, 255, 255, 0.352);
   transition: all ease .3s;
 }
@@ -58,7 +58,7 @@
 
 .fa-bars,
 .fa-magnifying-glass {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   margin: 0 15px 0;
   color: rgba(255, 255, 255, 0.352);
   transition: all ease .3s;
@@ -114,7 +114,7 @@
 
 .hamburgerMenuContainer p {
   margin-right: 10px;
-  font-size: 1.1rem;
+  font-size: .9rem;
 }
 
 
