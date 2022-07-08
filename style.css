@@ -194,6 +194,86 @@
   display: none;
 }
 
+
+.user-container .moreTools {
+  position: absolute;
+  top: 50px;
+  left: 5px;
+  background: #333;
+  min-width: 210px;
+  border-radius: 4px;
+  font-size: .85rem;
+  padding: 4px 0;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 10;
+}
+
+.user-container .moreTools::before {
+  content: ' ';
+  position: absolute;
+  top: -20px;
+  left: 25px;
+  margin-left: -10px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent #333 transparent;
+
+
+}
+
+.user-container .moreTools a {
+  padding: 12px 15px;
+  display: inline-block;
+  text-decoration: none;
+  font-size: .8rem;
+}
+
+.user-container .moreTools a:hover {
+  background: #222;
+  width: 100%;
+}
+
+.user-container .moreTools li:not(:last-child) {
+  border-bottom: 1px solid #54545487;
+}
+
+.toolsShow {
+  animation: toolsShow ease .3s forwards;
+}
+
+@keyframes toolsShow {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+    top: 50px;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+    top: 55px;
+  }
+}
+
+.toolsClose {
+  animation: toolsClose ease .3s forwards;
+}
+
+@keyframes toolsClose {
+  0% {
+    opacity: 1;
+    visibility: visible;
+    top: 55px;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+    top: 50px;
+  }
+}
+
+
+
 @media screen and (max-width: 660px) {
 
   .fa-user,
