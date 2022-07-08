@@ -149,13 +149,13 @@
   }
 
   100% {
-    height: 205px;
+    height: 207px;
   }
 }
 
 @keyframes hamburgerMenuClose {
   0% {
-    height: 205px;
+    height: 207px;
   }
 
   100% {
