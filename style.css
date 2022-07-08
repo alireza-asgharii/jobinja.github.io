@@ -111,6 +111,7 @@
   padding: 15px 20px;
   text-decoration: none;
   color: #fff;
+  cursor: default;
 }
 
 .hamburgerMenuContainer li a:hover {
