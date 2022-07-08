@@ -11,6 +11,10 @@
   width: auto;
   height: auto;
   transition: all ease .2s;
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 9;
 }
 
 .width-container {
@@ -230,6 +234,12 @@
   animation: toolsClose ease .3s forwards;
 }
 
+main {
+  width: 100%;
+  height: 1000px;
+  background: linear-gradient(#7A86B6, #495C83);
+}
+
 @keyframes toolsShow {
   0% {
     opacity: 0;
@@ -376,6 +386,7 @@
   .header .login {
     position: relative;
     right: 84px;
+    margin-left: 40px;
     display: flex;
     align-items: center;
   }
@@ -407,7 +418,7 @@
 
 @media screen and (min-width: 1200px) {
   .width-container {
-    width: 1200px;
+    width: 1160px;
   }
   .header .login {
     right: 220px;
