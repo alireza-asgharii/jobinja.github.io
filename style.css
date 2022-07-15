@@ -252,7 +252,7 @@
 
 .section-search .Introduction {
   width: 100%;
-  background: #ffffffed;  
+  background: #ffffffe7;
   text-align: center;
 }
 
@@ -292,12 +292,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgba(0,0,0,.5);
+  background: #3f3c3cb0;
   padding: 20px 25px;
   height: 75%;
 }
 
-.section-search .serachBox > form {
+.section-search .serachBox>form {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -342,7 +342,7 @@
   font-size: 1.3rem;
   position: absolute;
   right: 8px;
-  
+
 }
 
 .section-search .serachBox button {
@@ -356,7 +356,8 @@
   font-weight: 500;
   font-size: 1rem;
   line-height: 45px;
-  box-shadow: inset 0 -3px 0 0 #ffb833;;
+  box-shadow: inset 0 -3px 0 0 #ffb833;
+  ;
 
 }
 
@@ -386,6 +387,55 @@
   color: #fff;
 }
 
+.section-search .last {
+  display: none;
+  margin: 9px;
+  padding: 5px 10px;
+  background: #ffffffe0;
+  border-radius: 10px;
+  font-size: .8rem;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .section-search .last .load {
+  width: 15px;
+  height: 15px;
+  background: #1abc9c;
+  background: rgb(207, 199, 199);
+  border-radius: 50%;
+  margin-left: 5px;
+  position: relative;
+} */
+
+.section-search .last .load {
+  margin-left: 5px;
+  width: 15px;
+  height: 15px;
+  background: rgb(224, 218, 218);
+  border-right: 2px solid #1abc9c;
+  border-radius: 50%;
+  animation: loader linear 1s infinite;
+}
+
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+
+  }
+
+
+}
+
+.section-search .last a {
+  color: #3ab1e4;
+  text-decoration: none;
+}
+
 
 @keyframes toolsShow {
   0% {
@@ -393,6 +443,7 @@
     visibility: hidden;
     top: 50px;
   }
+
   100% {
     opacity: 1;
     visibility: visible;
@@ -406,6 +457,7 @@
     visibility: visible;
     top: 55px;
   }
+
   100% {
     opacity: 0;
     visibility: hidden;
@@ -449,6 +501,43 @@
 @media screen and (min-width: 780px) {
   .width-container {
     width: 720px;
+  }
+
+  .section-search {
+    height: 383px;
+
+  }
+
+  .section-search .Introduction {
+    width: 400px;
+    border-radius: 15px 15px 0 0;
+  }
+
+  .section-search .Introduction h1 {
+    padding: 20px 0 14px;
+  }
+
+  .section-search .Introduction p {
+    padding: 0 0 20px;
+  }
+
+  .section-search .main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section-search .serachBox form {
+    width: 660px;
+  }
+
+  .all {
+    padding: 15px;
+  }
+
+  .section-search .last {
+    display: flex;
   }
 }
 
@@ -527,9 +616,11 @@
     border-left: 1px solid rgba(0, 0, 0, 0.134);
     border-right: 1px solid rgba(255, 255, 255, 0.066);
   }
+
   .header .logo {
     margin: 18px;
   }
+
   .header .login {
     position: relative;
     right: 84px;
@@ -537,10 +628,12 @@
     display: flex;
     align-items: center;
   }
+
   .header .user {
     display: none;
 
   }
+
   .header .login .user-container {
     display: flex;
     align-items: center;
@@ -551,13 +644,16 @@
     cursor: pointer;
     transition: all ease .2s;
   }
+
   .header .login .user-container:hover {
     background: #656565;
   }
+
   .user-container span {
     font-size: .6rem;
     padding-left: 30px;
   }
+
   .header .user-container .fa-solid {
     font-size: .8rem;
   }
@@ -567,6 +663,7 @@
   .width-container {
     width: 1160px;
   }
+
   .header .login {
     right: 220px;
   }
