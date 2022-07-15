@@ -12,6 +12,7 @@
   height: auto;
   transition: all ease .2s;
   position: fixed;
+  top: 0;
   right: 0;
   left: 0;
   z-index: 9;
@@ -102,7 +103,7 @@
   position: absolute;
   top: 70px;
   right: 0;
-  background: #505050f7;
+  background: #505050;
   z-index: 10;
   height: 0;
   overflow: hidden;
@@ -234,11 +235,158 @@
   animation: toolsClose ease .3s forwards;
 }
 
-main {
+.section-search {
+  margin-top: 70px;
+  /* height: 383px; */
+  height: 340px;
   width: 100%;
-  height: 1000px;
-  background: linear-gradient(#7A86B6, #495C83);
+  background: url('./images/hero4.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
+
+.section-search .Introduction {
+  width: 100%;
+  background: #ffffffed;  
+  text-align: center;
+}
+
+.main-content {
+  width: 100%;
+}
+
+.section-search .Introduction h1 {
+  padding: 15px 0;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.section-search .Introduction p {
+  padding: 0 0 15px;
+  font-size: .8rem;
+  color: #4444448f;
+}
+
+.section-search .Introduction h1 a {
+  text-decoration: none;
+  border-bottom: 2px dashed #da3a3a;
+  color: #da3a3a;
+}
+
+.section-search .Introduction span {
+  color: #3ab1e4;
+  margin-left: -3px;
+  font-weight: bold;
+}
+
+
+.section-search .Introduction p {
+  font-weight: 500;
+}
+
+
+.section-search .serachBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0,0,0,.5);
+  padding: 20px 25px;
+}
+
+.section-search .serachBox > form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.section-search .serachBox label {
+  background-color: #ffffff;
+  width: 100%;
+  height: 45px;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.section-search .serachBox input:focus {
+  box-shadow: inset -1px -1px 3px #333
+}
+
+.section-search .serachBox input {
+  padding: 7px 5px;
+  background: none;
+  outline: none;
+  border: none;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 11px;
+  padding-right: 40px;
+  font-size: 1rem;
+}
+
+.section-search .serachBox input::placeholder {
+  font-size: .9rem;
+  font-weight: bold;
+  color: #68646484;
+}
+
+.section-search .serachBox i {
+  color: #686464ce;
+  font-size: 1.3rem;
+  position: absolute;
+  right: 8px;
+  
+}
+
+.section-search .serachBox button {
+  width: 100%;
+  margin-top: 10px;
+  background: #ffcd70;
+  padding: 0 18px;
+  height: 45px;
+  border: none;
+  border-radius: 3px;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 45px;
+  box-shadow: inset 0 -3px 0 0 #ffb833;;
+
+}
+
+.section-search .serachBox button:hover {
+  background-color: #f4ce89;
+}
+
+.all {
+  background: linear-gradient(to left, #1abc9ce4, #3ab5f2e7);
+  padding: 20px;
+  font-size: 1rem;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.all a {
+  border-bottom: 1px dashed #fff;
+  width: fit-content;
+  font-weight: 600;
+  text-decoration: none;
+  color: #fff;
+}
+
 
 @keyframes toolsShow {
   0% {
