@@ -261,15 +261,16 @@
 }
 
 .section-search .Introduction h1 {
-  padding: 15px 0;
+  padding: 11px 0;
   font-size: 1rem;
   font-weight: bold;
 }
 
 .section-search .Introduction p {
-  padding: 0 0 15px;
+  padding: 0 0 11px;
   font-size: .8rem;
-  color: #4444448f;
+  color: #444444aa;
+  font-weight: 700;
 }
 
 .section-search .Introduction h1 a {
@@ -285,9 +286,6 @@
 }
 
 
-.section-search .Introduction p {
-  font-weight: 500;
-}
 
 
 .section-search .serachBox {
@@ -296,6 +294,7 @@
   align-items: center;
   background: rgba(0,0,0,.5);
   padding: 20px 25px;
+  height: 75%;
 }
 
 .section-search .serachBox > form {
@@ -367,7 +366,7 @@
 
 .all {
   background: linear-gradient(to left, #1abc9ce4, #3ab5f2e7);
-  padding: 20px;
+  padding: 13px;
   font-size: 1rem;
   position: absolute;
   bottom: 0;
