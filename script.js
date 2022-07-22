@@ -4,6 +4,12 @@ const hamburgerMenu = document.querySelector(".hamburgerMenu");
 const hamburgerMenuContainer = document.querySelector(
   ".hamburgerMenuContainer"
 );
+const selectCity = document.querySelector(".selectCity");
+const selectCityItems = selectCity.querySelector(".items");
+const slectArrow = selectCity.querySelector(".arrow");
+const city = selectCity.querySelector(".city");
+const cityItems = selectCity.querySelector("ul").querySelectorAll("li");
+const cityItemsUl = selectCity.querySelector("ul");
 
 let clickMenu = false;
 let clickTools = false;
@@ -54,3 +60,31 @@ document.addEventListener("click", (e) => {
     clickTools = false;
   }
 });
+
+let selectCityisOpen = false;
+
+selectCity.addEventListener("click", (e) => {
+  if (!e.target.classList.contains("toggleInput")) {
+    selectCityisOpen = !selectCityisOpen;
+
+    selectCityItems.classList.toggle("showCityBox");
+    if (selectCityisOpen) {
+      slectArrow.classList.remove("rotateArrowRevers");
+      slectArrow.classList.add("rotateArrow");
+    } else {
+      slectArrow.classList.remove("rotateArrow");
+      slectArrow.classList.add("rotateArrowRevers");
+    }
+  }
+});
+
+for (let i = 0; i < cityItems.length; i++) {
+  cityItems[i].addEventListener("click", () => {
+    const value = cityItems[i].innerHTML;
+    city.innerHTML = value;
+    slected(city.innerHTML, value)
+  });
+}
+
+
+

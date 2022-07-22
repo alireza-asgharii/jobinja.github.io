@@ -235,6 +235,8 @@
   animation: toolsClose ease .3s forwards;
 }
 
+/* serach section header */
+
 .section-search {
   margin-top: 70px;
   /* height: 383px; */
@@ -293,8 +295,9 @@
   justify-content: center;
   align-items: center;
   background: #3f3c3cb0;
-  padding: 20px 25px;
+  padding: 20px 15px;
   height: 75%;
+  border-radius: 3px;
 }
 
 .section-search .serachBox>form {
@@ -303,6 +306,8 @@
   align-items: center;
   flex-direction: column;
   width: 100%;
+  padding: 0 5px;
+
 }
 
 .section-search .serachBox label {
@@ -315,11 +320,11 @@
   position: relative;
 }
 
-.section-search .serachBox input:focus {
+.section-search .serachBox .job:focus {
   box-shadow: inset -1px -1px 3px #333
 }
 
-.section-search .serachBox input {
+.section-search .serachBox .job {
   padding: 7px 5px;
   background: none;
   outline: none;
@@ -331,7 +336,7 @@
   font-size: 1rem;
 }
 
-.section-search .serachBox input::placeholder {
+.section-search .serachBox .job::placeholder {
   font-size: .9rem;
   font-weight: bold;
   color: #68646484;
@@ -418,6 +423,130 @@
   animation: loader linear 1s infinite;
 }
 
+.selectCity {
+  background-color: #ffffff;
+  height: 45px;
+  border-radius: 3px;
+  margin-right: 2px;
+  display: none;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #555555;
+  position: relative;
+  cursor: pointer;
+}
+
+
+.rotateArrow {
+  animation: rotateArrow ease .3s forwards;
+}
+
+@keyframes rotateArrow {
+  0% {
+    transform: rotateZ(0deg);
+  }
+
+  100% {
+    transform: rotateZ(180deg);
+  }
+}
+
+.rotateArrowRevers {
+  animation: rotateArrowRevers ease .3s forwards;
+}
+
+@keyframes rotateArrowRevers {
+  0% {
+    transform: rotateZ(180deg);
+  }
+
+  100% {
+    transform: rotateZ(0deg);
+  }
+
+
+}
+
+.selectCity .city {
+  width: 80%;
+  padding-right: 4px;
+}
+
+.selectCity .items {
+  position: absolute;
+  width: 100%;
+  top: 42px;
+  background: #fff;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 4px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all ease .3s;
+}
+
+.showCityBox {
+  animation: showCityBox ease .3s forwards;
+}
+
+@keyframes showCityBox {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+
+.selectCity .items input {
+  width: 90%;
+  outline: none;
+  border: 1px solid #3ab1e4;
+  padding: 6px 4px;
+  font-size: 12px;
+}
+
+.selectCity .items input::placeholder {
+  font-size: 14px;
+  font-weight: 300;
+  color: #555555;
+}
+
+.selectCity ul {
+  padding: 4px 6px;
+  list-style: none;
+  height: 230px;
+  overflow: auto;
+  width: 100%;
+}
+
+.selectCity ul li {
+  padding: 5px 6px;
+  border-bottom: 1px solid rgba(51, 51, 51, 0.104);
+  font-size: .9rem;
+  cursor: pointer;
+}
+
+.selectCity ul li:hover {
+  background: rgba(51, 51, 51, 0.104);
+}
+
+.selected {
+  background: #333;
+}
+
+
+
+
+
+
 @keyframes loader {
   0% {
     transform: rotate(0deg);
@@ -434,6 +563,11 @@
 .section-search .last a {
   color: #3ab1e4;
   text-decoration: none;
+}
+
+main {
+  background: linear-gradient(#3ab1e4, #1abc9c);
+  height: 500px;
 }
 
 
@@ -657,7 +791,47 @@
   .header .user-container .fa-solid {
     font-size: .8rem;
   }
+
+  .section-search .serachBox {
+    flex-direction: row;
+  }
+
+  .section-search .serachBox>form {
+    flex-direction: row;
+    align-items: center;
+    width: 940px;
+  }
+
+  .section-search .serachBox button {
+    margin-top: 0;
+    width: 20%;
+    margin-right: 2px;
+  }
+
+  .selectCity {
+    display: flex;
+  }
+
+  .section-search .serachBox label,
+  .selectCity {
+    width: 30%;
+  }
+
+
+  .section-search .Introduction {
+    width: 720px;
+  }
+
+  .section-search .Introduction h1 {
+    font-size: 2.1rem;
+    font-weight: bolder;
+  }
+
+  .section-search .Introduction p {
+    font-size: 1rem;
+  }
 }
+
 
 @media screen and (min-width: 1200px) {
   .width-container {
@@ -666,5 +840,9 @@
 
   .header .login {
     right: 220px;
+  }
+
+  .section-search .serachBox>form {
+    width: 1140px;
   }
 }
