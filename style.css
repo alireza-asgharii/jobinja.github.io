@@ -6,6 +6,10 @@
   user-select: none;
 }
 
+a {
+  cursor: default;
+}
+
 .header {
   background: #444;
   width: auto;
@@ -905,6 +909,8 @@
   .logo {
     cursor: default;
   }
+
+  
 }
 
 @media screen and (min-width: 780px) {
@@ -915,6 +921,9 @@
   .section-search {
     height: 383px;
 
+  }
+  a {
+    cursor: pointer;
   }
 
   .section-search .Introduction {
