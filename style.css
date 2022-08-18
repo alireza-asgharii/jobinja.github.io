@@ -6,9 +6,6 @@
   user-select: none;
 }
 
-a {
-  cursor: default;
-}
 
 .header {
   background: #444;
@@ -618,7 +615,7 @@ a {
   position: relative;
   text-decoration: none;
   display: block;
-
+  cursor: default;
 }
 
 .today .item .fast {
@@ -708,6 +705,7 @@ a {
   display: block;
   padding: 11px 0;
   position: relative;
+  cursor: default;
 }
 
 .last .item:last-child a {
@@ -766,6 +764,7 @@ a {
   color: #1988b8b0;
   margin-left: 20px;
   transition: all ease .3s;
+  cursor: default;
 }
 
 .last .seeAll a:hover {
@@ -922,9 +921,7 @@ a {
     height: 383px;
 
   }
-  a {
-    cursor: pointer;
-  }
+  
 
   .section-search .Introduction {
     width: 400px;
@@ -972,6 +969,14 @@ a {
   .last .heading {
     width: 150px;
     text-align: center;
+  }
+
+  .today .item {
+    cursor: pointer;
+  }
+
+  .last:where(.seeAll a, .item a) {
+    cursor: pointer;
   }
 
 }
