@@ -677,7 +677,7 @@
 
 .last .heading {
   position: absolute;
-  top: -54px;
+  top: -47px;
   background: #fff;
   right: -1px;
   border: 1px solid rgba(51, 51, 51, 0.162);
@@ -686,7 +686,7 @@
   border-radius: 4px 4px 0 0;
   color: #3ab1e4;
   padding: 10px;
-  /* padding-bottom: 11.5px; */
+  padding-bottom: 11.5px;
   cursor: pointer;
 }
 
@@ -968,7 +968,6 @@
   .last .heading {
     width: 150px;
     text-align: center;
-    top: -47px;
   }
 
   .today .item {
