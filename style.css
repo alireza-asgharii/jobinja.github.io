@@ -607,11 +607,10 @@
 
 
 .today .item {
-  padding: 4px;
   border: 1px solid rgba(51, 51, 51, 0.162);
   border-radius: 3px;
   margin: 20px;
-  padding: 22px 15px;
+  padding: 18px 15px;
   position: relative;
   text-decoration: none;
   display: block;
