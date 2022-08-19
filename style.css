@@ -1441,6 +1441,13 @@
   .blogPost .post .grid div {
     cursor: default;
   }
+  .blogPost .text .behzadText {
+    margin-top: 15px;
+  }
+
+  .blogPost .text .rezome {
+    border: none;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -1463,7 +1470,7 @@
   }
 
   .blogPost .text .behzadText div:first-child {
-    padding: 100px 20px 100px 30px;
+    padding: 40px 20px 40px 30px;
 
   }
 
@@ -1472,12 +1479,12 @@
   }
   .blogPost .post img,
   .blogPost .post .first img {
-    width: 100px;
+    width: 150px;
   }
 }
 
 @media screen and (max-width: 330px) {
   .blogPost .text .behzadText div:first-child {
-    padding: 50px 10px;
+    padding: 30px 10px;
   }
 }
