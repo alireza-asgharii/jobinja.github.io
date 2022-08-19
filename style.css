@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'IranSanss', Tahoma, Geneva, Verdana, sans-serif;
   user-select: none;
 }
 
@@ -139,7 +139,7 @@
 
 .hamburgerMenuContainer p {
   margin-right: 10px;
-  font-size: .9rem;
+  font-size: .75rem;
 }
 
 .hamburgerMenuOpen {
@@ -215,7 +215,7 @@
   padding: 12px 15px;
   display: inline-block;
   text-decoration: none;
-  font-size: .8rem;
+  font-size: .7rem;
 }
 
 .user-container .moreTools a:hover {
@@ -239,7 +239,7 @@
 /* serach section header */
 
 .section-search {
-  margin-top: 70px;
+  margin-top: 44px;
   /* height: 383px; */
   height: 340px;
   width: 100%;
@@ -266,12 +266,12 @@
 .section-search .Introduction h1 {
   padding: 11px 0;
   font-size: 1rem;
-  font-weight: bold;
+  font-weight: bolder;
 }
 
 .section-search .Introduction p {
   padding: 0 0 11px;
-  font-size: .8rem;
+  font-size: .6rem;
   color: #444444aa;
   font-weight: 700;
 }
@@ -374,7 +374,7 @@
 .all {
   background: linear-gradient(to left, #1abc9ce4, #3ab5f2e7);
   padding: 13px;
-  font-size: 1rem;
+  font-size: .9rem;
   position: absolute;
   bottom: 0;
   right: 0;
@@ -603,6 +603,7 @@
   width: 100%;
   padding: 15px 25px;
   color: #555555;
+  font-size: .9rem;
 }
 
 
@@ -635,7 +636,7 @@
 
 .today .item h6 {
   color: #46acd8;
-  font-size: .8rem;
+  font-size: .7rem;
   transition: all ease .3s;
   padding-bottom: 4px;
 }
@@ -677,7 +678,7 @@
 
 .last .heading {
   position: absolute;
-  top: -47px;
+  top: -50px;
   background: #fff;
   right: -1px;
   border: 1px solid rgba(51, 51, 51, 0.162);
@@ -688,6 +689,7 @@
   padding: 10px;
   padding-bottom: 11.5px;
   cursor: pointer;
+  font-size: .9rem;
 }
 
 .last ul {
@@ -717,7 +719,7 @@
 
 .last .item h6 {
   color: #363434bd;
-  font-size: .8rem;
+  font-size: .7rem;
   padding-bottom: 3px;
   transition: all ease .3s;
 }
@@ -733,21 +735,21 @@
 
 .last .item .more span {
   color: #635f5f;
-  font-size: .8rem;
+  font-size: .7rem;
   margin-right: 4px;
 
 }
 
 .last .item .more i {
   color: #bbb4b4;
-  font-size: .7rem;
+  font-size: .6rem;
 }
 
 .last .item .in {
   position: absolute;
   bottom: 20px;
   left: 0;
-  font-size: .8rem;
+  font-size: .65rem;
   font-weight: bold;
   color: #635f5fd6;
 }
@@ -755,6 +757,7 @@
 .last .seeAll {
   text-align: left;
   padding-bottom: 20px;
+  font-size: .9rem;
 
 }
 
@@ -796,7 +799,7 @@
   width: 100%;
   background: #f5f5f5;
   margin-bottom: 50px;
-  padding: 36px 0;
+  padding: 30px 0;
   border-top: 1px solid rgba(51, 51, 51, 0.162);
   border-bottom: 1px solid rgba(51, 51, 51, 0.162);
   display: none;
@@ -819,20 +822,20 @@
 
 .aboutSection .item h6 {
   color: #555555;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   padding-bottom: 4px;
   font-weight: bold;
 }
 
 .aboutSection .item p {
   color: #555555ad;
-  padding-bottom: 5px;
+  font-size: .9rem;
 }
 
 .aboutSection .item a {
   color: #3ab1e4;
   text-decoration: none;
-  font-size: .9rem;
+  font-size: .8rem;
   transition: all ease .3s;
   font-weight: 500;
 }
@@ -841,7 +844,9 @@
   color: #16678a;
 }
 
+
 /* blogPost */
+/* desctop first */
 .blogPost {
   display: flex;
   align-items: center;
@@ -880,9 +885,9 @@
 }
 
 .blogPost .post div p {
-  font-size: .8rem;
+  font-size: .7rem;
   padding-right: 12px;
-  color: #444;
+  color: rgba(68, 68, 68, 0.804);
 }
 
 .blogPost .post div.first {
@@ -906,8 +911,8 @@
 .blogPost .post div.first p {
   position: absolute;
   bottom: 25px;
-  font-size: 1.2rem;
-  font-weight: bold;
+  font-size: .9rem;
+  font-weight: 550;
   color: #fff;
   z-index: 3;
 
@@ -920,7 +925,7 @@
 }
 
 .blogPost .post h6 span {
-  color: #1e7296;
+  color: #2fa2d3;
 }
 
 
@@ -971,6 +976,7 @@
 
 .blogPost .text .behzadText div:first-child p {
   color: #ffffffd8;
+  font-size: .8rem;
 }
 
 .blogPost .text .behzadText div:first-child span {
@@ -1073,6 +1079,10 @@
 
   }
 
+  .hamburgerMenuContainer li a {
+    cursor: pointer;
+  }
+
 
   .section-search .Introduction {
     width: 400px;
@@ -1126,7 +1136,8 @@
     cursor: pointer;
   }
 
-  .last:where(.seeAll a, .item a) {
+  .last .seeAll a,
+  .last .item a {
     cursor: pointer;
   }
 
@@ -1217,7 +1228,7 @@
   .header .login {
     position: relative;
     right: 84px;
-    margin-left: 40px;
+    margin-left:20px;
     display: flex;
     align-items: center;
   }
@@ -1282,12 +1293,12 @@
   }
 
   .section-search .Introduction h1 {
-    font-size: 2.1rem;
+    font-size: 1.9rem;
     font-weight: bolder;
   }
 
   .section-search .Introduction p {
-    font-size: 1rem;
+    font-size: .9rem;
   }
 
   .top-item {
