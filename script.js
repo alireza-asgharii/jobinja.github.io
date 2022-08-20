@@ -98,10 +98,10 @@ const todayData = [
     location: " سپاهان همراه ",
     city: "تهران",
   },
-  
+
   {
-    name: 'استخدام انیماتور (خانم)',
-    location: ' تیزر مارکت ',
+    name: "استخدام انیماتور (خانم)",
+    location: " تیزر مارکت ",
     city: "تهران",
   },
   {
@@ -114,31 +114,30 @@ const todayData = [
     location: " نیرو موتور سهند ",
     city: "رشت",
   },
-  
+
   {
-    name: 'استخدام انیماتور (خانم)',
-    location: ' تیزر مارکت ',
+    name: "استخدام انیماتور (خانم)",
+    location: " تیزر مارکت ",
     city: "تهران",
   },
-  
+
   {
-    name: 'استخدام انیماتور (خانم)',
-    location: ' تیزر مارکت ',
+    name: "استخدام انیماتور (خانم)",
+    location: " تیزر مارکت ",
     city: "تهران",
   },
-  
+
   {
     name: "استخدام Operation Senior Specialist",
     location: " گروه اسنپ",
     city: "تهران",
   },
-  
+
   {
-    name: 'استخدام انیماتور (خانم)',
-    location: ' تیزر مارکت ',
+    name: "استخدام انیماتور (خانم)",
+    location: " تیزر مارکت ",
     city: "تهران",
   },
-  
 
   {
     name: "استخدام مدرس برنامه‌نویسی الگوریتم و پایتون",
@@ -166,8 +165,8 @@ const todayData = [
     city: "تهران",
   },
   {
-    name: 'استخدام انیماتور (خانم)',
-    location: ' تیزر مارکت ',
+    name: "استخدام انیماتور (خانم)",
+    location: " تیزر مارکت ",
     city: "تهران",
   },
 ];
@@ -200,82 +199,81 @@ todayDataRender();
 //last Arr
 const lastData = [
   {
-    name: 'استخدام مسئول دفتر(خانم)', 
-    location: ' باگلوس',
-    city: 'تهران'
+    name: "استخدام مسئول دفتر(خانم)",
+    location: " باگلوس",
+    city: "تهران",
   },
   {
-    name: 'استخدام طراح و گرافیست (خانم)', 
-    location: ' همراهان نور شبکه',
-    city: 'تهران'
+    name: "استخدام طراح و گرافیست (خانم)",
+    location: " همراهان نور شبکه",
+    city: "تهران",
   },
   {
-    name: 'استخدام سرپرست فروش', 
-    location: ' کیان تجارت فیدار',
-    city: 'تهران'
+    name: "استخدام سرپرست فروش",
+    location: " کیان تجارت فیدار",
+    city: "تهران",
   },
   {
-    name: 'استخدام مسئول دفتر(خانم)', 
-    location: ' باگلوس',
-    city: 'تهران'
+    name: "استخدام مسئول دفتر(خانم)",
+    location: " باگلوس",
+    city: "تهران",
   },
-  
-  
+
   {
-    name: 'استخدام مسئول مناقصات', 
-    location: ' مهندسی اندیشه سبز تازه',
-    city: 'تهران'
-  },
-  {
-    name: 'استخدام کارآموز برنامه نویسی فلاتر', 
-    location: ' راه کار درست دیجیتال',
-    city: 'تهران'
+    name: "استخدام مسئول مناقصات",
+    location: " مهندسی اندیشه سبز تازه",
+    city: "تهران",
   },
   {
-    name: 'استخدام مسئول دفتر(خانم)', 
-    location: ' تهران پارس',
-    city: 'تهران'
+    name: "استخدام کارآموز برنامه نویسی فلاتر",
+    location: " راه کار درست دیجیتال",
+    city: "تهران",
   },
   {
-    name: 'استخدام طراح و گرافیست (خانم)', 
-    location: ' همراهان نور شبکه',
-    city: 'تهران'
+    name: "استخدام مسئول دفتر(خانم)",
+    location: " تهران پارس",
+    city: "تهران",
   },
   {
-    name: 'استخدام مسئول دفتر(خانم)', 
-    location: ' باگلوس',
-    city: 'تهران'
+    name: "استخدام طراح و گرافیست (خانم)",
+    location: " همراهان نور شبکه",
+    city: "تهران",
   },
   {
-    name: 'استخدام کارآموز برنامه نویسی فلاتر', 
-    location: ' راه کار درست دیجیتال',
-    city: 'تهران'
+    name: "استخدام مسئول دفتر(خانم)",
+    location: " باگلوس",
+    city: "تهران",
   },
   {
-    name: 'استخدام مسئول دفتر(خانم)', 
-    location: ' تهران پارس',
-    city: 'تهران'
-  },
-  
-  {
-    name: 'استخدام سرپرست فروش', 
-    location: ' کیان تجارت فیدار',
-    city: 'تهران'
+    name: "استخدام کارآموز برنامه نویسی فلاتر",
+    location: " راه کار درست دیجیتال",
+    city: "تهران",
   },
   {
-    name: 'استخدام مسئول مناقصات', 
-    location: ' مهندسی اندیشه سبز تازه',
-    city: 'تهران'
+    name: "استخدام مسئول دفتر(خانم)",
+    location: " تهران پارس",
+    city: "تهران",
+  },
+
+  {
+    name: "استخدام سرپرست فروش",
+    location: " کیان تجارت فیدار",
+    city: "تهران",
   },
   {
-    name: 'استخدام منشی آموزشگاه زبان(خانم)', 
-    location: ' عصر کلام زنگنه',
-    city: 'تهران'
+    name: "استخدام مسئول مناقصات",
+    location: " مهندسی اندیشه سبز تازه",
+    city: "تهران",
   },
-]
+  {
+    name: "استخدام منشی آموزشگاه زبان(خانم)",
+    location: " عصر کلام زنگنه",
+    city: "تهران",
+  },
+];
 
 const lastDataRender = () => {
-  const lastUl = document.querySelector('.Landing ul');
+  const lastUl = document.querySelector(".Landing ul");
   for (let item of lastData) {
     const markup = `
       <li class="item">
@@ -296,9 +294,51 @@ const lastDataRender = () => {
           <span class="in">امروز</span>
         </a>
       </li>
-    `
+    `;
     lastUl.innerHTML += markup;
   }
-}
+};
 
-lastDataRender()
+lastDataRender();
+
+//footer
+const footerDivHead = document.querySelectorAll("footer .links h6");
+
+footerDivHead.forEach((item) => {
+  item.addEventListener("click", (e) => {
+    const Ele = e.target.childNodes[1];
+    const parentEle = e.target.parentElement;
+
+    const uls = document.querySelectorAll("footer .links ul");
+    // for (let item of uls) {
+    //   if (item.id === parentEle.childNodes[3].id) {
+    //     item.childNodes[3].classList.add("footerUlShow");
+    //   }
+    //   if (item.classList.contains("footerUlShow")) {
+    //     item.classList.replace("footerUlShow", "footerUlClose");
+    //   } 
+    //   if (item)
+    //   console.log(item);
+    // }
+
+    if (!Ele.classList.contains("arrowRotate")) {
+      Ele.classList.add("arrowRotate");
+      Ele.classList.remove("arrowRotateBack");
+    } else {
+      Ele.classList.add("arrowRotateBack");
+      Ele.classList.remove("arrowRotate");
+    }
+
+    if (!parentEle.childNodes[3].classList.contains("footerUlShow")) {
+      parentEle.childNodes[3].classList.add("footerUlShow");
+      parentEle.childNodes[3].classList.remove("footerUlClose");
+    } else {
+      parentEle.childNodes[3].classList.replace("footerUlShow", "footerUlClose");
+      // parentEle.childNodes[3].classList.remove("footerUlShow");
+    }
+  });
+});
+
+// document.addEventListener("click", (e) => {
+
+// }

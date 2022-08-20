@@ -7,6 +7,8 @@
 }
 
 
+
+
 .header {
   background: #444;
   width: auto;
@@ -988,6 +990,159 @@
 }
 
 
+/* footer */
+footer {
+  width: 100%;
+  background: #494949;
+  height: fit-content;
+  position: relative;
+}
+
+footer .links ul {
+  list-style: none;
+  width: 100%;
+  height: 0;
+  overflow: auto;
+  transition: all ease .3s;
+}
+
+footer .links ul::-webkit-scrollbar {
+  width: 1px;
+}
+
+
+footer .links li a {
+  background: rgb(105, 103, 103);
+  width: 100%;
+  display: block;
+  padding: 10px 11px;
+  font-size: .7rem;
+  border-bottom: 1px solid #555;
+
+}
+
+footer .links li a:hover {
+  background: #555;
+}
+
+footer .links h6 {
+  color: #fff;
+  padding: 10px 15px;
+  font-size: .9rem;
+  font-weight: 500;
+  background: #555;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgb(105, 103, 103);
+}
+
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.arrowRotate {
+  animation: arrowRotate ease .3s forwards;
+}
+
+.arrowRotateBack {
+  animation: arrowRotateBack ease .3s forwards;
+}
+
+@keyframes arrowRotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes arrowRotateBack {
+  0% {
+    transform: rotate(180deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.footerUlShow {
+  animation: footerUlShow ease .3s forwards;
+}
+
+.footerUlClose {
+  animation: footerUlClose ease .3s forwards;
+}
+
+@keyframes footerUlShow {
+  0% {
+    height: 0;
+  }
+
+  100% {
+    height: 160px;
+  }
+}
+
+@keyframes footerUlClose {
+  0% {
+    height: 160px;
+  }
+
+  100% {
+    height: 0;
+  }
+}
+
+.social {
+  text-align: center;
+  padding: 20px 10px;
+}
+
+.social h6 {
+  display: none;
+}
+
+
+
+.social .icons img {
+  width: 40px;
+  margin: 0 10px;
+}
+
+.social .text {
+  margin-top: 20px;
+}
+
+.social .text img {
+  width: 60px;
+  opacity: .5;
+}
+
+.social .text p {
+  width: 50%;
+  margin: 0 auto;
+  font-size: .8rem;
+  color: #fff;
+  opacity: .5;
+}
+
+footer .copyright {
+  width: 100%;  
+  text-align: center;
+  display: inline-block;
+  color: rgba(255, 255, 255, 0.496);
+  font-size: .6rem;
+  margin: 20px 0;
+}
+
+
+
 
 
 @keyframes toolsShow {
@@ -1066,6 +1221,9 @@
     cursor: default;
   }
 
+  body::-webkit-scrollbar {
+    width: 5px;
+  }
 
 }
 
@@ -1228,7 +1386,7 @@
   .header .login {
     position: relative;
     right: 84px;
-    margin-left:20px;
+    margin-left: 20px;
     display: flex;
     align-items: center;
   }
@@ -1354,6 +1512,98 @@
     display: flex;
   }
 
+  .containerFooter {
+    display: flex;
+    align-items: center;
+    width: 980px;
+    margin: 0 auto;
+  }
+
+  footer .links {
+    flex: 70;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    margin-top: 30px;
+  }
+
+  footer .social {
+    flex: 30;
+    padding-top: 0;
+  }
+
+  .footerUlShow {
+    animation: none;
+  }
+
+  .footerUlClose {
+    animation: none;
+  }
+
+  footer .links ul {
+    height: auto;
+    padding-top: 5px;
+  }
+
+  footer .links li a {
+    background: none;
+    padding: 5px 11px;
+    border: none;
+  }
+
+  footer .links li a:hover {
+    color: #f39d23;
+    background: none;
+  }
+
+  footer .links h6 {
+    background: none;
+    padding-top: 0;
+    padding-right: 0;
+    color: #878186;
+    width: 100%;
+    border-bottom: 1px solid rgba(105, 103, 103, 0.689);
+  }
+
+  footer .links .item {
+    width: 100%;
+    margin: 0 10px;
+  }
+
+  footer .links .fa-angle-down {
+    display: none;
+  }
+
+  .social h6 {
+    display: block;
+    background: none;
+    padding-top: 0;
+    padding-right: 0;
+    color: #878186;
+    width: 100%;
+    border-bottom: 1px solid rgba(105, 103, 103, 0.689);
+    font-size: .9rem;
+    padding: 0 0 15px 10px;
+  }
+
+  .social {
+    text-align: right;
+    margin-top: 30px;
+    font-weight: 500;
+  }
+
+  .social .icons {
+    padding-top: 20px;
+  }
+
+  .social .text p {
+    width: 100%;
+  }
+
+  .social .icons img {
+    margin: 0 5px;
+  }
+
 }
 
 
@@ -1376,6 +1626,14 @@
 
   .Landing {
     width: 1160px;
+  }
+
+  .containerFooter {
+    width: 1160px;
+  }
+
+  .social .icons img {
+    margin-left: 30px;
   }
 }
 
@@ -1449,9 +1707,11 @@
   .blogPost .text .rezome img {
     object-fit: cover;
   }
+
   .blogPost .post .grid div {
     cursor: default;
   }
+
   .blogPost .text .behzadText {
     margin-top: 15px;
   }
@@ -1488,6 +1748,7 @@
   .blogPost .post .grid {
     grid-template-columns: 1fr;
   }
+
   .blogPost .post img,
   .blogPost .post .first img {
     width: 150px;
